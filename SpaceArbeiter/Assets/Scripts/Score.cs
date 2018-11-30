@@ -16,7 +16,7 @@ public class Score : MonoBehaviour
 
     void SetScore()
     {
-        scoreText.text = string.Format("Score:{0}", score);
+        scoreText.text = string.Format("Score:{0}", score) + "Yen";
     }
 
     public void HitHalo( string tag ){
