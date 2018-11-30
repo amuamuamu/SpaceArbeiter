@@ -1,0 +1,526 @@
+fileFormatVersion: 2
+guid: 33344a1c71e084ba9a1cf0114d01712e
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: body
+    100004: box
+    100006: button2
+    100008: face
+    100010: footIFL
+    100012: footIFR
+    100014: handIFEndL
+    100016: handIFEndL 1
+    100018: handIFL
+    100020: handIFR
+    100022: hands2
+    100024: hands3
+    100026: head
+    100028: head 1
+    100030: headif
+    100032: headIFEnd
+    100034: hipIF
+    100036: legA
+    100038: legA1
+    100040: legB
+    100042: legB1
+    100044: lowArmIFL
+    100046: lowArmIFR
+    100048: lowLegIFL
+    100050: lowLegIFR
+    100052: neck
+    100054: neck2
+    100056: neckIF
+    100058: one
+    100060: spineAIF
+    100062: toeIFEndL
+    100064: toeIFEndL 1
+    100066: toeIFL
+    100068: toeIFR
+    100070: upArmIFL
+    100072: upArmIFR
+    100074: upLegIFL
+    100076: upLegIFR
+    400000: //RootNode
+    400002: body
+    400004: box
+    400006: button2
+    400008: face
+    400010: footIFL
+    400012: footIFR
+    400014: handIFEndL
+    400016: handIFEndL 1
+    400018: handIFL
+    400020: handIFR
+    400022: hands2
+    400024: hands3
+    400026: head
+    400028: head 1
+    400030: headif
+    400032: headIFEnd
+    400034: hipIF
+    400036: legA
+    400038: legA1
+    400040: legB
+    400042: legB1
+    400044: lowArmIFL
+    400046: lowArmIFR
+    400048: lowLegIFL
+    400050: lowLegIFR
+    400052: neck
+    400054: neck2
+    400056: neckIF
+    400058: one
+    400060: spineAIF
+    400062: toeIFEndL
+    400064: toeIFEndL 1
+    400066: toeIFL
+    400068: toeIFR
+    400070: upArmIFL
+    400072: upArmIFR
+    400074: upLegIFL
+    400076: upLegIFR
+    2100000: lambert2
+    4300000: box
+    4300002: one
+    4300004: button2
+    4300006: body
+    4300008: hands2
+    4300010: hands3
+    4300012: legB1
+    4300014: legB
+    4300016: legA
+    4300018: legA1
+    4300020: neck2
+    4300022: head
+    4300024: face
+    4300026: neck
+    9500000: //RootNode
+    13700000: body
+    13700002: box
+    13700004: button2
+    13700006: face
+    13700008: hands2
+    13700010: hands3
+    13700012: head 1
+    13700014: legA
+    13700016: legA1
+    13700018: legB
+    13700020: legB1
+    13700022: neck
+    13700024: neck2
+    13700026: one
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 1
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: hipIF
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upLegIFR
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upLegIFL
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lowLegIFR
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lowLegIFL
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: footIFR
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: footIFL
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spineAIF
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: headif
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upArmIFR
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: upArmIFL
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lowArmIFR
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: lowArmIFL
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: handIFR
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: handIFL
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: toeIFR
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: toeIFL
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Arbeiter(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: body
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: box
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: button2
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hands2
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hands3
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: head 1
+      parentName: head
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: face
+      parentName: head 1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: neck
+      parentName: head
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: hipIF
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: -0.033868186, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spineAIF
+      parentName: hipIF
+      position: {x: 3.5139657e-16, y: 0.008000521, z: -1.110223e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: neckIF
+      parentName: spineAIF
+      position: {x: 2.7086703e-16, y: 0.013870882, z: -2.2741286e-18}
+      rotation: {x: -4.917746e-16, y: 3.587571e-16, z: 1.7642763e-31, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: headif
+      parentName: neckIF
+      position: {x: 2.6051922e-16, y: 0.006378276, z: -3.6056824e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: headIFEnd
+      parentName: headif
+      position: {x: 4.3884428e-16, y: 0.013828833, z: 1.7415368e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upArmIFL
+      parentName: neckIF
+      position: {x: -1.1448574e-17, y: -0.0037478157, z: -0.009699052}
+      rotation: {x: 1.8885933e-17, y: 4.254401e-17, z: -8.034833e-34, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowArmIFL
+      parentName: upArmIFL
+      position: {x: -0.000023832394, y: -0.0008046595, z: -0.008778142}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: handIFL
+      parentName: lowArmIFL
+      position: {x: -0.000016497252, y: -0.00010073665, z: -0.011513859}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: handIFEndL
+      parentName: handIFL
+      position: {x: 0.00003476747, y: 0.00007068833, z: -0.007940709}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upArmIFR
+      parentName: neckIF
+      position: {x: -2.007971e-17, y: -0.0037478155, z: 0.00969905}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowArmIFR
+      parentName: upArmIFR
+      position: {x: -0.000023832237, y: -0.0008046209, z: 0.0087781055}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: handIFR
+      parentName: lowArmIFR
+      position: {x: -0.000016497512, y: -0.0001007703, z: 0.011513906}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: handIFEndL 1
+      parentName: handIFR
+      position: {x: 0.00003476763, y: 0.000070694114, z: 0.007940679}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upLegIFL
+      parentName: hipIF
+      position: {x: 2.5596198e-20, y: -0.0029908186, z: -0.007230745}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowLegIFL
+      parentName: upLegIFL
+      position: {x: -0.00006372809, y: -0.009865493, z: 0.0002112905}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: footIFL
+      parentName: lowLegIFL
+      position: {x: -0.00008764059, y: -0.012861848, z: 0.00007296192}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: toeIFL
+      parentName: footIFL
+      position: {x: -0.0039053825, y: -0.005130015, z: 0.000116346775}
+      rotation: {x: 0.0006364514, y: -0.00014409857, z: 0.00027541711, w: 0.99999976}
+      scale: {x: 1, y: 1, z: 1}
+    - name: toeIFEndL
+      parentName: toeIFL
+      position: {x: -0.011502808, y: 0.0010424972, z: 0.0002599054}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: upLegIFR
+      parentName: hipIF
+      position: {x: 2.4796077e-20, y: -0.0029908142, z: 0.0072307494}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: lowLegIFR
+      parentName: upLegIFR
+      position: {x: 0.00009099934, y: -0.009866314, z: -0.00015537}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: footIFR
+      parentName: lowLegIFR
+      position: {x: 0.00010840295, y: -0.012861943, z: 5.5511148e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: toeIFR
+      parentName: footIFR
+      position: {x: -0.003827719, y: -0.005189544, z: 3.1752377e-16}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: toeIFEndL 1
+      parentName: toeIFR
+      position: {x: -0.01155247, y: -0.00009736645, z: 4.7739588e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: legA
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: legA1
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: legB
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: legB1
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: neck2
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: one
+      parentName: Arbeiter(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
