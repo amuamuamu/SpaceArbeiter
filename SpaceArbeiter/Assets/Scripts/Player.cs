@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class Player : MonoBehaviour
@@ -14,7 +13,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     Kind kind_;
 
-    public Kind MyKind { get { return kind_; }}
+    public Kind MyKind { get { return kind_; } }
 
     [SerializeField]
     GameObject cameraObject;
@@ -48,15 +47,16 @@ public class Player : MonoBehaviour
 
     void Update()
     {
-        if ( timmer.GetComponent<TimerController>().isWaitingReady ||
-            timmer.GetComponent<TimerController>().isTimeOver){
+        if (timmer.GetComponent<TimerController>().isWaitingReady ||
+            timmer.GetComponent<TimerController>().isTimeOver)
+        {
             return;
         }
 
         float h = 0, v = 0;
         bool isJump = false;
 
-        switch( kind_)
+        switch (kind_)
         {
             case Kind.P1:
                 //A・Dキー、←→キーで横移動
@@ -132,7 +132,7 @@ public class Player : MonoBehaviour
     void OnCollisionStay(Collision col)
     {
         //　地上物なら
-        if( col.gameObject.tag == "Ground")
+        if (col.gameObject.tag == "Ground")
         {
             ground = true;
         }
@@ -148,5 +148,4 @@ public class Player : MonoBehaviour
         }
     }
 
-            }
-        
+}

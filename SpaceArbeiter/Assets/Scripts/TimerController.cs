@@ -18,7 +18,6 @@ public class TimerController : MonoBehaviour
     public bool isTimeOver = false;
     public float readyTime = 1.0f;
    
-
     public float totalTime;
     int seconds;
 
