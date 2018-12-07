@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour
 {
     public Text scoreText; //Text用変数
-    private int score = 0; //スコア計算用変数
+    public int score = 0; //スコア計算用変数
 
     void Start()
     {
@@ -16,7 +16,7 @@ public class Score : MonoBehaviour
 
     void SetScore()
     {
-        scoreText.text = string.Format("Score:{0}", score) + "Yen";
+        scoreText.text = string.Format("Score:{0} Yen", score) ;
     }
 
     public void HitHalo( string tag ){
@@ -24,7 +24,7 @@ public class Score : MonoBehaviour
 
         if (yourTag == "Halo")
         {
-            score += 150;
+            score += 50;
             // ここで音をならす
         }
         else if (yourTag == "HaloG")

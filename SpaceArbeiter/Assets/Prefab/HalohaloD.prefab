@@ -687,6 +687,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7004591b71f414f0c8c38e445a20873b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  effect: {fileID: 1349943178127878, guid: 428c4cda647e34407a0030eb760b43e6, type: 2}
+  effectOffsetY: 0.1
 --- !u!114 &114402544463758676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -695,12 +697,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1664651066920164}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92ab43086980444abacddd343ea9cc78, type: 3}
+  m_Script: {fileID: 11500000, guid: 8bdbd6782972347bea287f3d710cdeb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  rotationSmooth: 5
-  changeTargetSqrDistance: 5
+  speed: 5
+  rotationSmooth: 10
+  changeTargetSqrDistance: 1
 --- !u!136 &136565717926662808
 CapsuleCollider:
   m_ObjectHideFlags: 1
