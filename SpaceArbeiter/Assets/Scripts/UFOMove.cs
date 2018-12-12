@@ -23,11 +23,11 @@ public class UFOMove : MonoBehaviour
     private void Update()
     {
         // 目標地点との距離が小さければ、次のランダムな目標地点を設定する
-        float sqrDistanceToTarget = Vector3.SqrMagnitude(transform.position - targetPosition);
-        if (sqrDistanceToTarget < changeTargetSqrDistance)
-        {
-            targetPosition = GetRandomPositionOnLevel();
-        }
+        //float sqrDistanceToTarget = Vector3.SqrMagnitude(transform.position - targetPosition);
+        //if (sqrDistanceToTarget < changeTargetSqrDistance)
+        //{
+            //targetPosition = GetRandomPositionOnLevel();
+        //}
 
         // 目標地点の方向を向く
         Quaternion targetRotation = Quaternion.LookRotation(targetPosition - transform.position);

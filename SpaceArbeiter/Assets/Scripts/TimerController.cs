@@ -25,7 +25,7 @@ public class TimerController : MonoBehaviour
     void Start()
     {
         StartCoroutine("waitForReady");
-        StartCoroutine("waitForResult");
+
     }
 
     // Update is called once per frame
@@ -44,46 +44,57 @@ public class TimerController : MonoBehaviour
         //  タイムアウト！
         if (totalTime <= 0.0f)
         {
-            BGM[0].SetActive(false);
-            //  効果音
-            BGM[1].SetActive(true);
 
-            // FINISHの文字を出す
-            UI[3].SetActive(true);
+        
+            StartCoroutine("waitForResult");
 
 
-
-
-            //このタイミングで効果音分とめたい
-
-            //カメラ切り替え
-            FreeLookCamera[0].SetActive(false);
-            FreeLookCamera[1].SetActive(false);
-            FixedCamera[0].SetActive(true);
-            FixedCamera[1].SetActive(true);
-
-            //playerのアニメーション切り替え　できたら
-           
-
-            isTimeOver = true;
-
-
-            // FINISHの文字を消す
-            UI[3].SetActive(false);
-            // リザルト表示を出す
-            UI[3].SetActive(true);
-
-            if ( Players[0].GetComponent<Score>().score > Players[1].GetComponent<Score>().score){
-                WinImages[0].SetActive(true);
-            }else if(Players[0].GetComponent<Score>().score < Players[1].GetComponent<Score>().score)
             {
-                WinImages[1].SetActive(true);
+                BGM[0].SetActive(false);
+                //  効果音
+                BGM[1].SetActive(true);
+
+
+
+                // FINISHの文字を出す
+                UI[3].SetActive(true);
+
+
+                //このタイミングで効果音分とめたい　２秒ぐらい
+
+                //カメラ切り替え
+                FreeLookCamera[0].SetActive(false);
+                FreeLookCamera[1].SetActive(false);
+                FixedCamera[0].SetActive(true);
+                FixedCamera[1].SetActive(true);
+
+                //playerのアニメーション切り替え　できたら
+
+
+                isTimeOver = true;
+
+
+
+                // FINISHの文字を消す
+                UI[3].SetActive(false);
+                // リザルト表示を出す
+                UI[3].SetActive(true);
+
+                if (Players[0].GetComponent<Score>().score > Players[1].GetComponent<Score>().score)
+                {
+                    WinImages[0].SetActive(true);
+                }
+                else if (Players[0].GetComponent<Score>().score < Players[1].GetComponent<Score>().score)
+                {
+                    WinImages[1].SetActive(true);
+
+                }
+                else if (Players[0].GetComponent<Score>().score == Players[1].GetComponent<Score>().score)
+                {
+                    WinImages[2].SetActive(true);
+                }
 
             }
-            else if(Players[0].GetComponent<Score>().score == Players[1].GetComponent<Score>().score){
-                WinImages[2].SetActive(true);
-            }
-            
 
 
         }
@@ -108,7 +119,6 @@ public class TimerController : MonoBehaviour
     }
 
    
-
 
 
     }

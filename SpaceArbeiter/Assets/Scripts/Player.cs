@@ -10,20 +10,25 @@ public class Player : MonoBehaviour
         P2
     }
 
+
     [SerializeField]
     Kind kind_;
 
+
     public Kind MyKind { get { return kind_; } }
+
 
     [SerializeField]
     GameObject cameraObject;
     public GameObject timmer;
 
+
     //Rigidbodyを変数に入れる
     Rigidbody rb;
 
+
     //移動スピード
-    private float speed = 18f;
+    private float speed = 20f;
     //ジャンプ力
     private float thrust = 800;
     //Animatorを入れる変数
@@ -32,6 +37,8 @@ public class Player : MonoBehaviour
     Vector3 playerPos;
     //地面に接触しているか否か
     bool ground = true;
+    bool isJump = false;
+    private object 上に移動;
 
     void Start()
     {
@@ -42,8 +49,10 @@ public class Player : MonoBehaviour
         //プレイヤーの現在より少し前の位置を保存
         playerPos = transform.position;
 
+
         ground = true;
     }
+
 
     void Update()
     {
@@ -53,8 +62,12 @@ public class Player : MonoBehaviour
             return;
         }
 
+
         float h = 0, v = 0;
-        bool isJump = false;
+
+        //上に移動
+        //bool isJump = false;
+
 
         switch (kind_)
         {
@@ -67,6 +80,7 @@ public class Player : MonoBehaviour
                 isJump = Input.GetButtonDown("Jump");
                 break;
 
+
             case Kind.P2:
                 h = Input.GetKey(KeyCode.F) ? -1 :
                     Input.GetKey(KeyCode.H) ? +1 :
@@ -78,19 +92,24 @@ public class Player : MonoBehaviour
                 break;
         }
 
+
         float x = h * Time.deltaTime * speed;
         float z = v * Time.deltaTime * speed;
         //現在の位置＋入力した数値の場所に移動する
+
 
         Vector3 moveDir =
             cameraObject.transform.right * x +
             cameraObject.transform.forward * z;
 
+
         // rb.MovePosition(transform.position + new Vector3(x, 0, z));
         rb.MovePosition(transform.position + moveDir);
 
+
         // 動いていたらtrue
         bool isMoving = moveDir.magnitude > 0.01f;
+
 
         //移動距離が少しでもあった場合に方向転換
         if (isMoving)
@@ -101,9 +120,11 @@ public class Player : MonoBehaviour
             var rotation = Quaternion.LookRotation(moveDir);
             transform.rotation = Quaternion.Slerp(rotation, transform.rotation, 0.5f);
 
+
             //プレイヤーの位置を更新する
             playerPos = transform.position;
         }
+
 
         //地面に接触していると作動する
         if (ground)
@@ -113,20 +134,24 @@ public class Player : MonoBehaviour
                 //thrustの分だけ上方に力がかかる
                 rb.AddForce(transform.up * thrust);
 
+
                 //ジャンプのアニメーションをオンにする
                 animator.SetBool("Jumping", true);
                 ground = false;
             }
         }
 
+
         //走るアニメーションを再生
         animator.SetBool("Running", isMoving);
         //ジャンプのアニメーションをオフにする
         animator.SetBool("Jumping", !ground);
 
+
         //プレイヤーの位置を更新する
         playerPos = transform.position;
     }
+
 
     //Planに触れている間作動
     void OnCollisionStay(Collision col)
@@ -138,6 +163,7 @@ public class Player : MonoBehaviour
         }
     }
 
+
     //Planから離れると作動
     void OnCollisionExit(Collision col)
     {
@@ -147,5 +173,6 @@ public class Player : MonoBehaviour
             ground = false;
         }
     }
+
 
 }

@@ -32,9 +32,9 @@ public class Score : MonoBehaviour
             score += 500;
             // ここで音をならす
         }
-        else if (yourTag == "")
+        else if (yourTag == "UFO")
         {
-            score += 100;
+            score += 1000;
             // ここで音をならす
         }
 
