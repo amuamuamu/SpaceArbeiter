@@ -12,9 +12,17 @@ public class InputForStart : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if ( Input.GetMouseButtonDown(0)){
-        
+        if (Input.GetButtonDown("Jump"))
+        {
+
             SceneManager.LoadScene("SpaceArbeiter");
         }
+
+
+            if (Input.GetButtonDown("Jump2"))
+            {
+
+                SceneManager.LoadScene("SpaceArbeiter");
+            }
 	}
 }

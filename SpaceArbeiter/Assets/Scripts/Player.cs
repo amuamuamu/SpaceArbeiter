@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     //移動スピード
     private float speed = 20f;
     //ジャンプ力
-    private float thrust = 800;
+    private float thrust = 500;
     //Animatorを入れる変数
     Animator animator;
     //プレイヤーの位置を入れる
@@ -56,6 +56,23 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+
+        // これはOK
+        //if (Input.GetKeyDown(KeyCode.Space))
+        //{
+        //    gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 1000);
+        //}
+
+        // これもオッケー
+        //if ( Input.GetButtonDown("Jump") ){
+        //    gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 1000);
+        //}
+
+
+
+
+
+
         if (timmer.GetComponent<TimerController>().isWaitingReady ||
             timmer.GetComponent<TimerController>().isTimeOver)
         {
@@ -64,10 +81,7 @@ public class Player : MonoBehaviour
 
 
         float h = 0, v = 0;
-
-        //上に移動
-        //bool isJump = false;
-
+        isJump = false;
 
         switch (kind_)
         {
@@ -82,13 +96,14 @@ public class Player : MonoBehaviour
 
 
             case Kind.P2:
-                h = Input.GetKey(KeyCode.F) ? -1 :
-                    Input.GetKey(KeyCode.H) ? +1 :
-                    0;
-                v = Input.GetKey(KeyCode.G) ? -1 :
-                    Input.GetKey(KeyCode.T) ? +1 :
-                    0;
-                isJump = Input.GetKeyDown(KeyCode.V);
+
+                //A・Dキー、←→キーで横移動
+                h = Input.GetAxisRaw("Horizontal2");
+                //W・Sキー、↑↓キーで前後移動
+                v = Input.GetAxisRaw("Vertical2");
+                //スペースキーやゲームパッドの3ボタンでジャンプ
+                isJump = Input.GetButtonDown("Jump2");
+
                 break;
         }
 
@@ -102,8 +117,6 @@ public class Player : MonoBehaviour
             cameraObject.transform.right * x +
             cameraObject.transform.forward * z;
 
-
-        // rb.MovePosition(transform.position + new Vector3(x, 0, z));
         rb.MovePosition(transform.position + moveDir);
 
 
@@ -129,6 +142,12 @@ public class Player : MonoBehaviour
         //地面に接触していると作動する
         if (ground)
         {
+            //if ( Input.GetButtonDown("Jump") ){
+            //    gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * thrust);
+            //    animator.SetBool("Jumping", true);
+            //    ground = false;
+            //}
+
             if (isJump)
             {
                 //thrustの分だけ上方に力がかかる

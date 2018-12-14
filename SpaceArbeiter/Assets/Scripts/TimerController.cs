@@ -56,11 +56,13 @@ public class TimerController : MonoBehaviour
 
 
 
+
                 // FINISHの文字を出す
                 UI[3].SetActive(true);
 
+                //  効果音
+                //BGM[1].SetActive(true);
 
-                //このタイミングで効果音分とめたい　２秒ぐらい
 
                 //カメラ切り替え
                 FreeLookCamera[0].SetActive(false);
@@ -93,6 +95,12 @@ public class TimerController : MonoBehaviour
                 {
                     WinImages[2].SetActive(true);
                 }
+
+
+               
+
+
+
 
             }
 
