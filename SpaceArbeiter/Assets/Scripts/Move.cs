@@ -30,12 +30,14 @@ public class Move : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * rotationSmooth);
 
         // 前方に進む
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        // transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+        gameObject.GetComponent<Rigidbody>().velocity = Vector3.forward * speed;
     }
 
     public Vector3 GetRandomPositionOnLevel()
     {
-        float levelSize = 10f;
+        float levelSize = 100f;
         return new Vector3(Random.Range(-levelSize, levelSize), 0, Random.Range(-levelSize, levelSize));
     }
 }
