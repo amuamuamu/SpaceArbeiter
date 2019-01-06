@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     //移動スピード
     private float speed = 20f;
     //ジャンプ力
-    private float thrust = 800;
+    private float thrust = 700;
     //Animatorを入れる変数
     Animator animator;
     //プレイヤーの位置を入れる

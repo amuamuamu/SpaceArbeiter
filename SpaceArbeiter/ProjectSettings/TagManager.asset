@@ -8,6 +8,7 @@ TagManager:
   - HaloG
   - Ground
   - UFO
+  - Piro
   layers:
   - Default
   - TransparentFX

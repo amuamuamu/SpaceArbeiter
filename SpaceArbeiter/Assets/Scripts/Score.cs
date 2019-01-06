@@ -24,21 +24,27 @@ public class Score : MonoBehaviour
 
         if (yourTag == "Halo")
         {
-            score += 50;
+            score += 100;
             // ここで音をならす
         }
         else if (yourTag == "HaloG")
         {
-            score += 500;
+            score += 2000;
             // ここで音をならす
         }
         else if (yourTag == "UFO")
         {
-            score += 1000;
+            score += 1500;
             // ここで音をならす
         }
 
-        SetScore();
+        else if (yourTag == "Piro")
+        {
+            score += 500;
+        }
+
+
+            SetScore();
         // 上のができたらここはけす
         gameObject.GetComponent<AudioSource>().Play();
 

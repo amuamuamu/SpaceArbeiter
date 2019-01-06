@@ -18,6 +18,8 @@ public class UFOMove : MonoBehaviour
         startY = gameObject.transform.position.y;
 
         targetPosition = GetRandomPositionOnLevel();
+
+        StartCoroutine("callRandom");
     }
 
     private void Update()
@@ -26,8 +28,10 @@ public class UFOMove : MonoBehaviour
         //float sqrDistanceToTarget = Vector3.SqrMagnitude(transform.position - targetPosition);
         //if (sqrDistanceToTarget < changeTargetSqrDistance)
         //{
-            //targetPosition = GetRandomPositionOnLevel();
+        //targetPosition = GetRandomPositionOnLevel();
         //}
+
+        //targetPosition = GetRandomPositionOnLevel();
 
         // 目標地点の方向を向く
         Quaternion targetRotation = Quaternion.LookRotation(targetPosition - transform.position);
@@ -39,7 +43,14 @@ public class UFOMove : MonoBehaviour
 
     public Vector3 GetRandomPositionOnLevel()
     {
-        float levelSize = 10f;
+        float levelSize = 100f;
         return new Vector3(Random.Range(-levelSize, levelSize), startY, Random.Range(-levelSize, levelSize));
+    }
+
+    IEnumerator callRandom(){
+        while(true){
+            yield return new WaitForSeconds(1.0f);
+            targetPosition = GetRandomPositionOnLevel();
+        }
     }
 }

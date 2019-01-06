@@ -5,7 +5,7 @@ using UnityEngine;
 public class RandomEnemy : MonoBehaviour
 {
     //生まれてくる敵プレハブ
-    public GameObject enemyPrefab;
+    public GameObject[] enemyPrefabs;
     //敵を格納
     GameObject[] existEnemys;
     //アクティブ最大数
@@ -27,7 +27,7 @@ public class RandomEnemy : MonoBehaviour
         while (true)
         {
             Generate();
-            yield return new WaitForSeconds(5.0f);
+            yield return new WaitForSeconds(1.0f);
         }
     }
 
@@ -38,7 +38,7 @@ public class RandomEnemy : MonoBehaviour
             if (existEnemys[enemyCount] == null)
             {
                 //敵を作成する
-                existEnemys[enemyCount] = Instantiate(enemyPrefab, transform.position, transform.rotation) as GameObject;
+                existEnemys[enemyCount] = Instantiate(enemyPrefabs[Random.Range(0,enemyPrefabs.Length)], transform.position, transform.rotation) as GameObject;
                 return;
             }
         }
